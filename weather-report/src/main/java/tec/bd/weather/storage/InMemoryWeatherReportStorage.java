@@ -54,7 +54,7 @@ public class InMemoryWeatherReportStorage implements WeatherReportStorage {
     }
 
     private String generateKeyFromReport(Report report) {
-        var dateFormat = new SimpleDateFormat("dd-mm-YYYY");
-        return (dateFormat.format(report.getDate()) + "-" + report.getReportType());
+        var dateFormat = new SimpleDateFormat("dd-MM-YYYY");
+        return (dateFormat.format(report.getDate()) + "-" + report.getReportType() + "-" + report.getLocation());
     }
 }

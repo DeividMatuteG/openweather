@@ -13,6 +13,8 @@ bin/
 # General
 *~
 
+*target/
+
 # IntelliJ
 *.iml
 *.ipr

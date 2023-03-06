@@ -12,6 +12,8 @@ public class Report {
     private float maxTemperature;
     private float minTemperature;
 
+    private String Location;
+
     public Report() {
 
     }
@@ -72,6 +74,14 @@ public class Report {
         this.minTemperature = minTemperature;
     }
 
+    public String getLocation() {
+        return Location;
+    }
+
+    public void setLocation(String Location) {
+        this.Location = Location;
+    }
+
     @Override
     public String toString() {
         return "Report{" +
@@ -82,6 +92,7 @@ public class Report {
                 ", pressure=" + pressure +
                 ", maxTemperature=" + maxTemperature +
                 ", minTemperature=" + minTemperature +
+                ", location=" + Location +
                 '}';
     }
 }

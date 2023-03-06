@@ -51,6 +51,7 @@ public class OpenWeatherProvider implements WeatherService {
         report.setMaxTemperature(openWeatherReport.getMain().getTempMax());
         report.setDate(new Date());
         report.setReportType(reportType);
+        report.setLocation(openWeatherReport.getName());
 
         return report;
     }
